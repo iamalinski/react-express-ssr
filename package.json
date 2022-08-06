@@ -1,0 +1,44 @@
+{
+  "name": "react-router-server-rendering",
+  "description": "Example for server rendering with React Router.",
+  "scripts": {
+    "build": "webpack",
+    "start": "node public/server.js",
+    "dev": "webpack && node public/server.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "mini-css-extract-plugin": "^2.0.0",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "history": "^5.0.0",
+    "isomorphic-fetch": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.1.2",
+    "serialize-javascript": "^6.0.0",
+    "ssr-polyfill": "^1.0.1"
+  },
+  "version": "1.0.0"
+}
